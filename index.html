@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="./src/assets/images/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sport Hub</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,52 @@
     />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="training">
+        <div class="training_menu">
+          <div class="menu_icon">
+            <img src="img/training/training_menu/sportHUB.svg" alt="sportHUB icon">
+          </div>
+          <div class="menu_categories">
+            <a href="#">главная</a>
+            <a href="#">тренировки</a>
+            <a href="#">статьи</a>
+          </div>
+          <div class="menu_users">
+            <img id="training_user" src="img/training/training_menu/user.svg" alt="user">
+            <img id="training_user_info" src="img/training/training_menu/ArrowDOWN.svg" alt="arrow down">
+          </div>
+          <div class="training_burger">
+            <span class="burger_item">
+                <div class="burger_list">
+                    <ul>
+                        <li><a href="#">главная</a></li>
+                        <li><a href="#">тренировки</a></li>
+                        <li><a href="#">статьи</a></li>
+                        <li><a href="#">профиль</a></li>
+                    </ul>
+                </div>
+            </span>
+          </div>
+        </div>
+
+        <div class="training_message">
+          <p>Не можете определиться с выбором? Подберите тренировку, соответствующую вашим целям!</p>
+          <a href="#"><img src="img/training/training_message/arrow-right.svg" alt=""></a>
+        </div>
+
+        <div class="training_pagination">
+          <a href="#" class="pagination_page">1</a>
+          <a href="#" class="pagination_page">2</a>
+          <a href="#" class="pagination_page">3</a>
+          <a href="#" class="pagination_page">4</a>
+          <span>...</span>
+          <a href="#" class="pagination_page">99</a>
+        </div>
+      
+      </div>
+    </div>
+    <script src="js/script.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
